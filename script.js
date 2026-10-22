@@ -6,15 +6,12 @@ const quizQuestions = [
   { question: "What is the smallest prime number?", answer: "2" },
   { question: "What does “HTML” stand for?", answer: "HyperText Markup Language" }
 ];
-
 // Function to run the quiz
 function runQuiz() {
   let score = 0; // Initialize score
-
   for (let i = 0; i < quizQuestions.length; i++) {
     // Take user input
     const userAnswer = prompt(quizQuestions[i].question);
-
     // Check answer (case-insensitive and trimmed)
     if (
       userAnswer &&
